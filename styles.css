@@ -1,0 +1,78 @@
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+p, li {
+    font-family: 'Arial', sans-serif;
+}
+a {
+    color:black;
+    text-decoration: none;
+}
+.About, .Projects, .Skills, .Contact {
+    margin: 20px;
+    padding: 20px;
+}
+
+  
+.ul{
+    display: flex;
+    justify-content: center; /* توسيط العناصر أفقيًا */
+    align-items: center; /* توسيط العناصر عموديًا */
+    list-style-type: none; /* إزالة النقاط من القائمة */
+    padding: 0;
+}
+.ul li{
+  display: block;
+  padding: 15px 20px;
+  color: white;
+
+
+}
+
+.Header{
+    text-align: center; /* توسيط كل العناصر النصية والمضمنة */
+    background-color: darkgrey;
+    position: static;
+    padding: 5px 0 0 0
+}
+.About {
+    text-align: center;
+}
+table {
+    width: 100%; /* جعل الجدول بعرض الصفحة */
+    border-collapse: collapse; /* دمج الحدود بين الخلايا */
+    margin: 20px 0; /* إضافة مسافة حول الجدول */
+  }
+  
+  th, td {
+    border: 1px solid #ddd; /* إضافة حدود خفيفة للخلايا */
+    padding: 12px; /* إضافة مساحة داخل كل خلية */
+    text-align: left; /* محاذاة النص إلى اليسار */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* خلفية فاتحة لرأس الجدول */
+    font-weight: bold; /* خط سميك لرأس الجدول */
+    color: #333; /* لون نص الرأس */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9; /* تلوين الصفوف الزوجية */
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1; /* تغيير لون الصف عند التمرير عليه */
+  }
+  
+  td {
+    text-align: center; /* توسيط النص داخل الخلايا */
+  }
+  
+  caption {
+    caption-side: top; /* وضع عنوان الجدول في الأعلى */
+    font-size: 1.5em; /* تكبير حجم العنوان */
+    margin-bottom: 10px; /* إضافة مسافة أسفل العنوان */
+    font-weight: bold; /* جعل العنوان عريض */
+    color: #555; /* لون العنوان */
+  }
+  
