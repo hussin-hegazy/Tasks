@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="Header">
@@ -18,20 +19,20 @@
 
     <div class="About" id="About">
         <h2>About Me Section</h2>
-        <p>A web developer passionate about designing and creating interactive websites and web applications. I always strive to learn new technologies and apply them to my daily projects.</p>
-        <!-- تصغير حجم الصورة باستخدام HTML -->
+        <p id="aboutText">A web developer passionate about designing and creating interactive websites and web applications. I always strive to learn new technologies and apply them to my daily projects.</p>
         <img src="" alt="img" width="150">
+        <button id="updateAboutBtn">Fun Fact</button>
     </div>
 
     <div class="Projects" id="Projects">
         <h2>Projects Section</h2>
         <ol>
             <li>
-                <h3>Task1html</h3>
-                <p>Web page project showcasing skills, projects and contact information.</p>
-                <a href=""></a>
+                <h3 id="projectTitle">Task1html</h3>
+                <p>Web page project showcasing skills, projects, and contact information.</p>
+                <a href="#" id="projectLink">Project Link</a>
                 <figure>
-                    <img src="IMIGE.png" alt="HTML Project" width="100">
+                    <img src="IMIGE.png" alt="HTML Project" width="100" id="projectImage">
                     <figcaption>HTML Project</figcaption>
                 </figure>
             </li>
@@ -42,10 +43,10 @@
         <h2>Skills Section</h2>
         <table>
             <thead>
-               <tr>
-                <td>Skill</td>
-                <td>Experience Level</td>
-               </tr>
+                <tr>
+                    <td>Skill</td>
+                    <td>Experience Level</td>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -66,18 +67,23 @@
 
     <div class="Contact" id="Contact">
         <h2>Contact Section</h2>
-        <form action="">
+        <form id="contactForm">
             <label for="Name">Name</label><br>
             <input type="text" id="Name" name="Name"><br><br>
 
             <label for="Email">Email</label><br>
-            <input type="Email" id="Email" name="Email"><br><br>
+            <input type="email" id="Email" name="Email"><br><br>
 
             <label for="Message">Message</label><br>
             <textarea name="Message" id="Message"></textarea><br><br>
 
             <button type="submit">Submit</button>
         </form>
+        <div id="formFeedback"></div>
     </div>
+
+    <button id="scrollToTop" title="Go to top">Top</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
