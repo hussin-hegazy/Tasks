@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Manager</title>
+    <link rel="stylesheet" href="stylle.css">
+</head>
+<body>
+   <h1>Book Manager</h1> 
+   
+   <!-- Form to Add a New Book -->
+   <form id="book-form">
+       <input type="text" placeholder="Title" id="title" required>
+       <input type="text" placeholder="Author" id="author" required>
+       <input type="number" placeholder="Year" id="year" required>
+       <input type="text" placeholder="Genre" id="genre" required>
+       <button type="button" onclick="addBook()">Add Book</button>
+   </form>
+   
+   <!-- Area to Display the List of Books -->
+   <div id="book-list">
+       <!-- Books will be displayed here -->
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
